@@ -1,0 +1,43 @@
+@import '../../assets/styles/variables';
+
+.group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $color-background-primary;
+    width: 250px;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 100px 80px;
+    border-radius: 15px;
+    border: 3px solid $color-border-primary;
+
+    &__input, &__select {
+        background: none;
+        border:none;
+        color: $color-text-primary;
+        appearance: none;
+        border: none;
+        padding: 0 45px 0 0;
+        margin: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: 21px;
+        cursor: pointer;
+        line-height: inherit;
+        border-radius: 10px;
+    }
+
+    &__input {
+        padding-left: 20px;
+    }
+
+    &__select {
+        padding: 15px;
+        background: $color-background-primary; 
+    }
+
+    :hover {
+        background-color: $color-background-tertiary;
+    }
+}
